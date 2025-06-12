@@ -21,22 +21,26 @@ footer {
 }
 
 hr {
-    width: 35%;
+    width: 40em;
 }
 
 .navbar-elem {
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
 }
 
 .center {
-    max-width: 40%;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+}
+
+.center h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 
 a:link {
     color: #5bcefa

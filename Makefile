@@ -13,9 +13,9 @@ INTERMEDIATES =
 
 
 HTML_FILES += index.html 
-MD_FILES += mainpage.md
+MD_FILES += mainpage.md blog.md
 RESOURCES += trans_flag.svg styles.css
-INTERMEDIATES += macros.m4
+INTERMEDIATES += macros.m4 navbar.m4
 
 
 
@@ -41,7 +41,7 @@ $(TMP_PREPROC_HTML_FILES): $(BUILD_DIR)/$(TMP_PREPROC_DIRNAME)/%: $(SRC_DIR)/% $
 	cp $< $@
 
 $(TMP_PREPROC_MD_FILES): $(BUILD_DIR)/$(TMP_PREPROC_DIRNAME)/%.html: $(SRC_DIR)/%.md $(BUILD_DIR)/$(TMP_PREPROC_DIRNAME)
-	pandoc --from=markdown --to=html -o $@ $<
+	m4 -P -I $(dir $<) $< | pandoc --from=markdown --to=html -o $@
 
 $(TMP_PREPROC_INTERMEDIATES): $(BUILD_DIR)/$(TMP_PREPROC_DIRNAME)/%: $(SRC_DIR)/% $(BUILD_DIR)/$(TMP_PREPROC_DIRNAME)
 	cp $< $@

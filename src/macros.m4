@@ -21,9 +21,7 @@ m4_define(`PAGE_TEMPLATE',
     </head>
     <body>
         <header>
-            <a class="navbar-elem" href="index.html">Home</a>
-            <a class="navbar-elem" href="blog.html">Blog</a>
-            <a class="navbar-elem" href="about.html">Contact</a>
+            'm4_include(`navbar.m4')`
         </header>
         <hr>
         <div class="center">
@@ -32,8 +30,10 @@ m4_define(`PAGE_TEMPLATE',
         <hr>
         <footer>
 	        'CC_BY_DISCLAIMER(`athweb')`
-            <p>🏳️‍⚧️ trans rights! 🏳️‍🌈</p>
+            <br style="display: block; margin-top: 0.3em;">
+            🏳️‍⚧️ trans rights! 🏳️‍🌈
         </footer>
     </body>
 </html>'
 )m4_dnl
+m4_define(`PAGE_TEMPLATE_MD', PAGE_TEMPLATE($1, esyscmd(`pandoc --from=markdown --to=html mkstemp($2)')))
