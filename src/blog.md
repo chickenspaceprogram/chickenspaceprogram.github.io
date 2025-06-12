@@ -1,6 +1,7 @@
-m4_include(`macros.m4')
-PAGE_TEMPLATE_MD(`athweb: Blog', `
+\title{athweb: Blog}
 # Blog
 
-This is a boilerplate page, the blog is not up yet.
-')
+\def{blogitem}{- $0: [$1]($2)}
+
+\blogitem{2025-06-12}{Generic C and Preprocessor Madness}{blogposts/2025-06-12.html}
+
