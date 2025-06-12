@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #efefd0;
+    background-color: #24232a;
+    font-family: 'Courier New', monospace;
+}
+
+header {
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+hr {
+    width: 35%;
+}
+
+.navbar-elem {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.center {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a:link {
+    color: #5bcefa
+}
+
+a:visited {
+    color: #910091
+}
+
+a:hover {
+    color: #f5a9b8
+}
