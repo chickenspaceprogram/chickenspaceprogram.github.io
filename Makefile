@@ -4,7 +4,8 @@ SRC_DIR := src
 HMACRO := hmacro
 TEMPLATE := $(SRC_DIR)/template.html
 
-MD_FILES := blog.md index.md contact.md
+MD_FILES := index.md contact.md
+MD_FILES += blogposts/index.md blogposts/2025-06-15.md
 RESOURCES := styles.css trans_flag.svg
 
 HMACRO_TARGETS := $(MD_FILES:%.md=$(BUILD_DIR)/%.html)
