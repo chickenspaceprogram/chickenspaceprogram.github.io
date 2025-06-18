@@ -28,15 +28,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Get Pandoc
-        uses: pandoc/actions/setup@v1
-      - name: Get Cargo
-        uses: actions/checkout@v2
-        uses: actions-rs/toolchain@v1
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
+      - uses: pandoc/actions/setup@v1
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Build site
         run: git clone https://github.com/chickenspaceprogram/hmacro --depth 1 && cd hmacro && cargo install --path . && cd .. && make
       - name: Setup Pages
