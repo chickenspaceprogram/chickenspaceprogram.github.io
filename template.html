@@ -1,17 +1,17 @@
 \def{year}{2025}\
 \def{cc_by_disclaimer}{
-        $0 © \year by Athena Boose is licensed under 
+        $1 © \year by Athena Boose is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 }\
-\year
-\def{navbar_elem}{<a class="navbar-elem" href="$1">$0</a>}\
+\def{navbar_elem}{<a class="navbar-elem" href="$2">$1</a>}\
+\incldefs{\filename_defs}\
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles.css">
 	    <link rel="icon" type="image/svg+xml" href="trans_flag.svg">
         <title>
             \title
@@ -19,13 +19,13 @@
     </head>
     <body>
         <header>
-            \navbar_elem{Home}{index.html}
-            \navbar_elem{Blog}{blogposts/index.html}
-            \navbar_elem{Contact}{contact.html}
+            \navbar_elem{Home}{/index.html}
+            \navbar_elem{Blog}{/blogposts/index.html}
+            \navbar_elem{Contact}{/contact.html}
         </header>
         <hr>
         <div class="center">
-            \text
+            \include{\filename}
         </div>
         <hr>
         <footer>

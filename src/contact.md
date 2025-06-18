@@ -1,4 +1,4 @@
-\title{athweb: Contact}
+\def{title}{athweb: Contact}
 # Contact
 
 Email is the best way to contact me.

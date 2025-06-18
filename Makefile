@@ -1,27 +1,42 @@
 
 BUILD_DIR := build
+PREPROC_DIR := preproc
+OUT_DIR := out
 SRC_DIR := src
 HMACRO := hmacro
-TEMPLATE := $(SRC_DIR)/template.html
+TEMPLATE := template.html
 
 MD_FILES := index.md contact.md
 MD_FILES += blogposts/index.md blogposts/2025-06-15.md
 RESOURCES := styles.css trans_flag.svg
 
-HMACRO_TARGETS := $(MD_FILES:%.md=$(BUILD_DIR)/%.html)
-RESOURCE_TARGETS := $(RESOURCES:%=$(BUILD_DIR)/%)
+MD_TARGETS := $(MD_FILES:%.md=$(BUILD_DIR)/$(PREPROC_DIR)/%.html)
+RESOURCE_TARGETS := $(RESOURCES:%=$(BUILD_DIR)/$(OUT_DIR)/%)
+
+TEMPLATE_MD_TARGETS := $(MD_FILES:%.md=$(BUILD_DIR)/$(OUT_DIR)/%.html)
+
 
 .PHONY: clean all
-all: $(HMACRO_TARGETS) $(RESOURCE_TARGETS)
+all: $(TEMPLATE_MD_TARGETS) $(RESOURCE_TARGETS)
 
 clean:
 	rm -rf $(BUILD_DIR)
 
-$(HMACRO_TARGETS): $(BUILD_DIR)/%.html: $(SRC_DIR)/%.md $(BUILD_DIR)
-	./templatecomp.sh $(TEMPLATE) $< $@
+$(MD_TARGETS): $(BUILD_DIR)/$(PREPROC_DIR)/%.html: $(SRC_DIR)/%.md $(BUILD_DIR)/$(PREPROC_DIR)
+	$(HMACRO) $< | pandoc --from=markdown --to=html -o $@
 
-$(RESOURCE_TARGETS): $(BUILD_DIR)/%: $(SRC_DIR)/% $(BUILD_DIR)
+$(RESOURCE_TARGETS): $(BUILD_DIR)/$(OUT_DIR)/%: $(SRC_DIR)/% $(BUILD_DIR)/$(OUT_DIR)
 	cp $< $@
+
+$(TEMPLATE_MD_TARGETS): $(BUILD_DIR)/$(OUT_DIR)/%.html: $(BUILD_DIR)/$(PREPROC_DIR)/%.html $(SRC_DIR)/%.md $(BUILD_DIR)/$(OUT_DIR) $(TEMPLATE)
+	$(HMACRO) -Dfilename=$< -Dfilename_defs=$(word 2,$^) $(TEMPLATE) > $@
 
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
+
+$(BUILD_DIR)/$(OUT_DIR):
+	mkdir -p $(BUILD_DIR)/$(OUT_DIR)/blogposts
+
+$(BUILD_DIR)/$(PREPROC_DIR):
+	mkdir -p $(BUILD_DIR)/$(PREPROC_DIR)/blogposts
+

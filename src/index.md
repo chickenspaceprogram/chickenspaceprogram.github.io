@@ -1,4 +1,4 @@
-\title{athweb}
+\def{title}{athweb}
 # Athena Boose
 
 I'm a Computer Science student primarily interested in systems programming,
