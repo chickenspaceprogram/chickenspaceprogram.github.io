@@ -7,7 +7,7 @@ HMACRO := hmacro
 TEMPLATE := template.html
 
 MD_FILES := index.md contact.md
-MD_FILES += blogposts/index.md blogposts/2025-06-18.md
+MD_FILES += blogposts/index.md blogposts/2025-06-18.md blogposts/2025-06-26.md
 RESOURCES := styles.css trans_flag.svg
 
 MD_TARGETS := $(MD_FILES:%.md=$(BUILD_DIR)/$(PREPROC_DIR)/%.html)
