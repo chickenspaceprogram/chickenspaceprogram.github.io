@@ -30,7 +30,7 @@ hr {
 }
 
 .center {
-    max-width: 40em;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
 }

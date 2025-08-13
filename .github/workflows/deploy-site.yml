@@ -36,7 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build site
-        run: git clone https://github.com/chickenspaceprogram/hmacro --depth 1 && cd hmacro && cargo install --path . && cd .. && make
+        run: cargo install hmacro && make
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
