@@ -6,7 +6,7 @@ SRC_DIR := src
 HMACRO := hmacro
 TEMPLATE := template.html
 
-MD_FILES := index.md contact.md
+MD_FILES := index.md contact.md links.md
 MD_FILES += $(shell cd src && find blogposts -type f)
 RESOURCES := styles.css trans_flag.svg
 
