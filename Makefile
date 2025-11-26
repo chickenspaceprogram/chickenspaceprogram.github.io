@@ -19,6 +19,9 @@ TEMPLATE_MD_TARGETS := $(MD_FILES:%.md=$(BUILD_DIR)/$(OUT_DIR)/%.html)
 .PHONY: clean all
 all: $(TEMPLATE_MD_TARGETS) $(RESOURCE_TARGETS)
 
+run: all
+	sh -c 'cd $(BUILD_DIR)/$(OUT_DIR) && python3 -m http.server'
+
 clean:
 	rm -rf $(BUILD_DIR)
 
