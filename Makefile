@@ -8,7 +8,7 @@ TEMPLATE := template.html
 
 MD_FILES := index.md contact.md links.md
 MD_FILES += $(shell cd src && find blogposts -type f)
-RESOURCES := styles.css trans_flag.svg
+RESOURCES := styles.css trans_flag.svg heptagram.svg
 
 MD_TARGETS := $(MD_FILES:%.md=$(BUILD_DIR)/$(PREPROC_DIR)/%.html)
 RESOURCE_TARGETS := $(RESOURCES:%=$(BUILD_DIR)/$(OUT_DIR)/%)
