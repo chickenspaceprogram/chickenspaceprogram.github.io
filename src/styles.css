@@ -42,6 +42,12 @@ hr {
     align-items: center;
 }
 
+.horiz-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 code {
     font-size: 125%
 }
