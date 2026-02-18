@@ -5,4 +5,5 @@
 \blogitem{2025-06-18}{Generic C and Preprocessor Madness}
 \blogitem{2025-07-02}{Go is a good-bad language}
 \blogitem{2025-07-30}{Software Licenses}
+\blogitem{2026-02-17}{321q2: a cursed numbering system}
 
