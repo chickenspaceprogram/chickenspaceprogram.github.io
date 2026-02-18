@@ -1,6 +1,7 @@
 \def{extra_head_items}{}\
 \incldefs{\filename_defs}\
 \include{src/macros.hm}\
+\def{otherkin_img}{<img src="/heptagram.svg" alt="Otherkin symbol (also known as: acute heptagram, fairy star, elven star)" style="max-width: 2em; max-height:2em; $1" />}
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,9 +28,9 @@
         <footer>
 	        \cc_by_disclaimer{athweb}
             <br style="display: block; margin-top: 0.3em;">
+	    \otherkin_img{}
             🏳️‍⚧️ trans rights! 🏳️‍🌈
-            <br style="display: block; margin-top: 0.3em;">
-            <img src="/heptagram.svg" alt="Otherkin symbol (also known as: acute heptagram, fairy star, elven star)" style="max-width: 2em; max-height:2em;" />
+	    \otherkin_img{transform: scaleX(-1);}
         </footer>
     </body>
 </html>

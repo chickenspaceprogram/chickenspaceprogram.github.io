@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="974.92786" height="1000.0">
 <!-- X Coordinate transform: fx(x)=(x+0.9960172)*466.23492-->
 <!-- Y Coordinate transform: fy(y)=(1.0724207-y)*466.23492 -->
-<g style="stroke:#ffffff;stroke-width:10;stroke-opacity:1.00;fill-opacity:00">
+<g style="stroke:#efefd0;stroke-width:20;stroke-opacity:1.00;fill-opacity:00">
 <!-- Group: poly-->
 <path d="M 930.613,500 44.315,297.708"/>
 <path d="M 44.315,297.708 755.071,864.517"/>
