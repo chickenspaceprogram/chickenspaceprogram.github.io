@@ -6,7 +6,7 @@ class StarData:
 	star_radius: int = 100
 	star_border: int = 5
 	stroke_color: str = "efefd0"
-	stroke_width: int = 3
+	stroke_width: int = 5
 	stroke_opacity: float = 1.0
 	fill_opacity: float = 0.0
 
