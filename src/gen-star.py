@@ -11,7 +11,7 @@ class StarData:
 	fill_opacity: float = 0.0
 
 	# in radians
-	rotate_angle: float = 0.0
+	rotate_angle: float = math.pi / 2
 	def __init__(self, npts: int, skipped_pts: int):
 		self.npts = npts
 		self.skipped_pts = skipped_pts
