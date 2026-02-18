@@ -49,6 +49,11 @@ hr {
     flex-direction: row;
 }
 
+.horiz-container > * {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 code {
     font-size: 125%
 }
