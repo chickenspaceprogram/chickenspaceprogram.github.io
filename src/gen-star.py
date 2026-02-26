@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+
+
+# This file allows for the generation of SVGs of various star shapes.
+# It exists because I disliked all the fairy star images I found online; might
+# as well create my own that works well with this site's color scheme.
+
 import math
 
 class StarData:

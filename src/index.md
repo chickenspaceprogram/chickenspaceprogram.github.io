@@ -1,17 +1,29 @@
 \def{title}{athweb}
 # Athena Boose
 
-I'm a Computer Science student primarily interested in systems programming,
-compilers, and programming language design. This site is partly a landing page,
-but it also has some blog posts and other stuff.
+I'm a Physics and Computer Engineering student primarily interested in systems
+programming, compilers, and programming language design. I'm also interested in
+atomic physics and physical chemistry, but there's a lot less of a focus on
+those latter topics here.
 
-To contact me, check out the [contact](contact.html) page.
+If you want to contact me, check out the [contact](contact.html) page.
 
-This site is written in a combination of HTML, CSS, and Markdown, and the
-files get run through my 
-[hmacro](https://github.com/chickenspaceprogram/hmacro) preprocessor.
+To see a few blog articles I've written about various topics, check out the
+[blogs](/blogposts/index.html) page.
 
-Source code for this website is available
-[here](https://github.com/chickenspaceprogram/chickenspaceprogram.github.io)
-under a CC BY 4.0 license.
+This site is statically generated with my own Unix-based toolchain. No
+Javascript was used in its creation, it should work sensibly and be readable
+in [Lynx][1] or any other browser that doesn't support Javascript.
 
+Source code for this website is available [here][2] under a CC BY 4.0 license.
+
+Not all the tooling used to create the site is under that same license; the two
+dependencies are my [hmacro][3] preprocessor and [pandoc][4]. These two
+dependencies will be replaced at some point, but I'm quite busy for the moment
+so don't expect it soon.
+
+
+[1]: https://lynx.invisible-island.net/
+[2]: https://github.com/chickenspaceprogram/chickenspaceprogram.github.io
+[3]: https://github.com/chickenspaceprogram/hmacro
+[4]: https://pandoc.org/
