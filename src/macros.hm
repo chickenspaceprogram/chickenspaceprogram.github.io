@@ -7,5 +7,5 @@
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 }\
 \def{navbar_elem}{<a class="navbar-elem" href="$2">$1</a>}\
-\def{otherkin_img}{<img src="/heptagram.svg" alt="Acute Heptagram" title=":3" style="max-width: 1.5em; max-height: 1.5em;" />}
-\def{webmaster}[<pestpestthechicken@yahoo.com>}
+\def{otherkin_img}{<img src="/heptagram.svg" alt="Acute Heptagram" title=":3" style="max-width: 1.5em; max-height: 1.5em;" />}\
+\def{webmaster}{<pestpestthechicken@yahoo.com>}\
