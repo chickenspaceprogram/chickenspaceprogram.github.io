@@ -2,9 +2,9 @@
 \def{year}{2026}\
 \
 \def{cc_by_disclaimer}{\
-<a href="https://www.athweb.net/">athweb</a> © \year by \
-<a href="https://www.athweb.net/links.html">Athena Boose</a> is licensed\
-under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>\
+<a href="/">athweb</a> © \year by <a href="/links.html">Athena Boose</a> \
+is licensed under \
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> \
 }\
 \def{navbar_elem}{<a class="navbar-elem" href="$2">$1</a>}\
 \def{otherkin_img}{<img src="/heptagram.svg" alt="Acute Heptagram" title=":3" style="max-width: 1.5em; max-height: 1.5em;" />}\
