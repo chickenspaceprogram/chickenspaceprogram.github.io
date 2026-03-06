@@ -1,9 +1,11 @@
+PANDOCFLAGS := --mathml
 
 BUILD_DIR := build
 PREPROC_DIR := preproc
 OUT_DIR := out
 SRC_DIR := src
 HMACRO := hmacro
+#HMACRO := ../hmacro/target/release/hmacro
 TEMPLATE := template.html
 
 MD_FILES := index.md contact.md links.md 404.md
@@ -26,7 +28,7 @@ clean:
 	rm -rf $(BUILD_DIR)
 
 $(MD_TARGETS): $(BUILD_DIR)/$(PREPROC_DIR)/%.html: $(SRC_DIR)/%.md $(BUILD_DIR)/$(PREPROC_DIR)
-	$(HMACRO) $< | pandoc --from=markdown --to=html -o $@
+	$(HMACRO) $< | pandoc --from=markdown --to=html $(PANDOCFLAGS) | sed 's/\\/\\\\/g' > $@
 
 $(RESOURCE_TARGETS): $(BUILD_DIR)/$(OUT_DIR)/%: $(SRC_DIR)/% $(BUILD_DIR)/$(OUT_DIR)
 	cp $< $@
