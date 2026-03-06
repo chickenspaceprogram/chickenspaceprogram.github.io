@@ -12,8 +12,10 @@ To see a few blog articles I've written about various topics, check out the
 [blogs](/blogposts/index.html) page.
 
 This site is statically generated with my own Unix-based toolchain. No
-Javascript was used in its creation, it should work sensibly and be readable
-in [Lynx][1] or any other browser that doesn't support Javascript.
+Javascript was used in its creation, it should work sensibly and be mostly
+readable in [Lynx][1] or any other browser that doesn't support Javascript,
+with the caveat that any math expressions might not display right on
+browsers without MathML support.
 
 Source code for this website is available [here][2] under a CC BY 4.0 license.
 
