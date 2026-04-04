@@ -5,7 +5,6 @@ PREPROC_DIR := preproc
 OUT_DIR := out
 SRC_DIR := src
 HMACRO := hmacro
-#HMACRO := ../hmacro/target/release/hmacro
 TEMPLATE := template.html
 
 MD_FILES := index.md contact.md links.md 404.md
