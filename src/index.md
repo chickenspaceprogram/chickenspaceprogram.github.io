@@ -1,5 +1,4 @@
 \def{title}{athweb}
-# athweb
 
 You've reached the personal webpage of Athena Boose.
 
