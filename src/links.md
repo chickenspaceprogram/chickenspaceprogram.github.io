@@ -5,15 +5,19 @@
 
 Here's a few links to various other places you can find me.
 
-- [GitHub][1]
-- [Codeberg][2] (not much there for now)
-- [Pronouns.page][3]
-- [YouTube][4]
-- [Backstabbr][5] (i suck at Diplomacy)
+- [GitHub][gh] (don't expect new projects here, I'm migrating to [Codeberg][cb])
+- [Codeberg][cb]
+- [Pronouns.page][pronouns]
+- [YouTube][yt]
+- [Backstabbr][backstabbr] (i suck at Diplomacy)
+- [Tumblr][tumblr]
+- [LinkedIn][hellsite]
 
 
-[1]: https://github.com/chickenspaceprogram
-[2]: https://codeberg.org/chickenspaceprogram
-[3]: https://en.pronouns.page/@chickenspaceprgm
-[4]: https://youtube.com/@chickenspaceprogram
-[5]: https://backstabbr.com/member/3e7f9143bdef4f2899cbaa2a9179a784
+[gh]: https://github.com/chickenspaceprogram
+[cb]: https://codeberg.org/chickenspaceprogram
+[pronouns]: https://en.pronouns.page/@chickenspaceprgm
+[yt]: https://youtube.com/@chickenspaceprogram
+[backstabbr]: https://backstabbr.com/member/3e7f9143bdef4f2899cbaa2a9179a784
+[tumblr]: https://chickenspaceprogram.tumblr.com
+[hellsite]: https://www.linkedin.com/in/athena-boose/
