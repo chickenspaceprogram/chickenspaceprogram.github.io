@@ -1,5 +1,7 @@
 \def{title}{athweb: Links}
-# Links
+\incldefs{macros.hm}
+
+\centerh1{Links}
 
 Here's a few links to various other places you can find me.
 

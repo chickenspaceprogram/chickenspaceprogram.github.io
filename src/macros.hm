@@ -13,3 +13,4 @@ is licensed under \
 ~~~}\
 \def{end_codeblock}{~~~
 </div>}\
+\def{centerh1}{<h1 class="center">$1</h1>}\

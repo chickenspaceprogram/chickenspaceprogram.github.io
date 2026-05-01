@@ -1,4 +1,7 @@
 \def{title}{athweb}
+\incldefs{macros.hm}
+
+\centerh1{athweb}
 
 You've reached the personal webpage of Athena Boose.
 

@@ -1,6 +1,7 @@
 \incldefs{macros.hm}
 \def{title}{athweb: Contact}
-# Contact
+
+\centerh1{Contact}
 
 Email is the best way to contact me.
 

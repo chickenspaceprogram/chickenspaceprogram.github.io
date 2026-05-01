@@ -1,5 +1,7 @@
 \def{title}{athweb: Blog}\
-# Blog
+\incldefs{../macros.hm}
+
+\centerh1{Blog}
 
 Here you can find some blogposts I've written. These are less formal journal
 articles and more me shitposting at 3am; still, maybe you'll find them useful.
