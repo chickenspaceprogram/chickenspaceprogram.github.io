@@ -5,7 +5,7 @@
 
 Here's a few links to various other places you can find me.
 
-- [GitHub][gh] (don't expect new projects here, I'm migrating to [Codeberg][cb])
+- [GitHub][gh] (don't expect new projects; migrating to Codeberg)
 - [Codeberg][cb]
 - [Pronouns.page][pronouns]
 - [YouTube][yt]
