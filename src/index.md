@@ -3,7 +3,7 @@
 
 \centerh1{athweb}
 
-You've reached the personal webpage of Athena Boose.
+You've reached the personal webpage of Athena.
 
 I'm a Physics and Computer Engineering student primarily interested in systems
 programming, compilers, and programming language design. I'm also interested in

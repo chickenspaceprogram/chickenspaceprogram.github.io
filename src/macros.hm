@@ -2,7 +2,7 @@
 \def{year}{2026}\
 \
 \def{cc_by_disclaimer}{\
-<a href="/">athweb</a> © \year by <a href="/links.html">Athena Boose</a> \
+<a href="/">athweb</a> © \year by <a href="/links.html">Athena</a> \
 is licensed under \
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> \
 }\
