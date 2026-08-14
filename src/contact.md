@@ -13,4 +13,4 @@ down I can also be reached at <pestpestthechicken@yahoo.com>.
 For less formal inquiries, I'm the user `aths` on `irc.libera.chat`. I don't
 log on too often, so please send a memo.
 
-Pronouns: she/they/fae
+Pronouns: she/they/fae/it
